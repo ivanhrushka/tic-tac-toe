@@ -5,7 +5,7 @@ from aiohttp import web
 async def handle(request):
     name = request.match_info.get('name', "Anonymous")
     text = "Hello, " + name
-    print('handle')
+    print('Вжух')
     return web.Response(text=text)
 
 
